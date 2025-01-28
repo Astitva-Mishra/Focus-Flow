@@ -5,7 +5,8 @@ import {
   Clock, 
   Settings, 
   Target,
-  Menu
+  HomeIcon,
+  Home
 } from 'lucide-react';
 
 interface NavItem {
@@ -16,7 +17,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { icon: <Target size={24} />, label: 'Daily Focus', href: '#' },
-  { icon: <Clock size={24} />, label: 'Focus Timer', href: '#' },
+  { icon: <Home size={24} />, label: 'Home', href: '#' },
   { icon: <BookOpen size={24} />, label: 'Tasks', href: '#' },
   { icon: <BarChart3 size={24} />, label: 'Analytics', href: '#' },
   { icon: <Settings size={24} />, label: 'Settings', href: '#' },
@@ -51,7 +52,7 @@ export function Sidebar() {
       onMouseLeave={() => setIsExpanded(false)}
     >
       <div className="flex h-16 items-center justify-center">
-        <Menu size={24} className="text-blue-400" />
+        <HomeIcon size={24} className="text-blue-400" />
       </div>
       
       <nav className="mt-8">
@@ -74,6 +75,6 @@ export function Sidebar() {
           </a>
         ))}
       </nav>
-    </div>
+    </div> 
   );
 }
