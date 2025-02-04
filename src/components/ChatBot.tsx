@@ -55,7 +55,7 @@ const ChatBot: React.FC = () => {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg mt-8 w-full max-w-lg mx-auto">
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4 text-center">AI ChatBot</h2>
+      <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4 text-center">Focus-Flow Bot</h2>
       <div
         id="chat-container"
         ref={chatContainerRef}
