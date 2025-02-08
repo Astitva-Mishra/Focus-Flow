@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'AIzaSyAxBGPDCqKGez7HnPORvGo0t-vQzgZ9tfw';  // Replace with your valid Gemini API key
+const API_KEY = 'Your Api Key';  // Replace with your valid Gemini API key
 const BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
 export const fetchChatResponse = async (message: string) => {
